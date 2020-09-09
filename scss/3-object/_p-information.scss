@@ -1,0 +1,87 @@
+.p-information{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  .information-text{
+    width:80%;
+    margin:200px 0;
+    @media screen and (max-width:600px){
+      width:100%;
+      margin:100px 0;
+    }
+    .information-text-title{
+      position:relative;
+      color:#fff;
+      font-size:40px;
+      font-family: "Yu Mincho", "YuMincho", serif;
+      margin-bottom:100px;
+      line-height:1.5;
+      @media screen and (max-width:600px){
+        font-size:16px;
+      }
+      & p{
+        text-align:center;
+        opacity:0;
+        & span{
+          opacity:0;
+        }
+      }
+    }
+    & svg{
+      width:400px;
+      position:absolute;
+      top:50%;
+      left:50%;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      @media screen and (max-width:600px){
+        width:250px;
+      }
+    }
+    .period, .place, .access{
+      color:#fff;
+      font-size:30px;
+      font-family: "Yu Mincho", "YuMincho", serif;
+      margin-bottom:50px;
+      @media screen and (max-width:600px){
+        font-size:16px;
+      }
+      & p{
+        text-align:center;
+        line-height:1.3;
+      }
+      .information-text-explanation-title{
+        position:relative;
+        margin-bottom:15px;
+      }
+      .information-text-explanation-title::after{
+        content:"";
+        position:absolute;
+        left:50%;
+        bottom:-3px;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        display:block;
+        width:30%;
+        height:1px;
+        background-image: linear-gradient(to left, transparent, #fff 30%, #fff 70%, transparent);
+      }
+    }
+    .ggmap{
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      opacity:0;
+      & iframe{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

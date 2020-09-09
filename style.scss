@@ -1,0 +1,20 @@
+@import url(//use.fontawesome.com/releases/v5.0.11/css/all.css);
+
+/* 1-foundation style import */
+@import './scss/1-foundation/reset';
+@import './scss/1-foundation/loding';
+@import './scss/1-foundation/swiper.min';
+@import './scss/1-foundation/fontawesome/brands';
+@import './scss/1-foundation/fontawesome/solid';
+
+/* 2-layout style import */
+@import './scss/2-layout/header';
+@import './scss/2-layout/main';
+@import './scss/2-layout/footer';
+
+
+/* 3-object style import */
+@import './scss/3-object/p-about';
+@import './scss/3-object/p-type';
+@import './scss/3-object/p-movie';
+@import './scss/3-object/p-information';
